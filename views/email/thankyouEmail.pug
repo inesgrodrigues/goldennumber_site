@@ -1,0 +1,26 @@
+extends baseEmail
+
+block content
+  p Olá #{firstName},
+  p A tua compra está completa 🎉🙏
+  p Aqui consegues ver o resumo daquilo que adquiriste:
+  table.products(role='presentation' border='0' cellpadding='0' cellspacing='0')
+    thead
+      tr
+        th Ano de Escolaridade
+        th Quantidade
+        th Preço
+    tbody
+      each product in products
+        tr
+          td= product.productName
+          td= product.quantity  
+          td #{product.price}€
+      tr
+        td
+        td 
+        td Total: #{totalPrice}€ 
+  p
+  p Iremos entrar em contacto contigo, dentro de 48h, via Whatsapp ou Email para agendarmos as tuas explicações caso estas ainda não estejam agendadas. 
+  p Caso seja urgente por favor entra imediatamente em contacto connosco através do Whatsapp para o 965608061. 
+  p Inês Rodrigues - Golden Number

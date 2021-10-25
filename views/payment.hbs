@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lnag="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Golden Number Academy </title>
+	<link rel="stylesheet" type="text/css" href="/style.css"/>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"/>
+	<script type="text/javascript" scr="store.js" async></script>
+	
+	
+	</head>
+	<body>
+        <div class="payment">
+		<div class="container">
+			<div class="navbar">
+			<div class="logo">
+			<a href="/"><img src="/Imagens/logo.png" width="65px" style="border-radius: 60%;"></a>
+			</div>
+		</div>
+		</div>
+		</div>
+
+        <div class="pagamentos">
+            <h2 onclick="myFunction()"id="myBtn">Transferência Bancária</h2> <span id="dots"></span><span id="more">
+            <p>Nome: José Manuel Cruz </p>
+            <p>PT50 0007 0000 0003 6169 2642 3 </p>
+            <p>País: Portugal </p>
+             <a href="/form"><button class="pagar">Prosseguir com a sua compra</button></span></a>
+        </div>
+        <div class="pagamentos">
+            <h2 onclick="yourFunction()"id="myBotao">MB Way</h2> <span id="pontos"></span><span id="mais">
+            <p>965608061</p>
+            <a href="/form"><button class="pagar">Prosseguir com a sua compra</button></span></a>
+        </div>
+        <div class="pagamentos">
+            <h2  id="startCheckout" class="startCheckout">Cartão Bancário</h2>
+        </div>
+
+	<!-- rodapé -->
+<div class="footer">
+			<div class="container">
+				<div id="contactos" class="row">
+					<div class="footer-col-1"> 
+					</div>
+					<div class="footer-col-2">
+					<h3> Fala connosco </h3>
+						<!-- Add icon library -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+						<!-- Add font awesome icons -->
+						<a href="https://www.facebook.com/GoldenNumberAcademy" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/goldennumberacademy/" class="fa fa-instagram"></a>
+						<a href="https://join.skype.com/invite/lfAyjBYL3q9h" class="fa fa-skype"></a>
+						<a href="mailto:goldenumber@outlook.pt" class="fa fa-envelope"></a>
+						<a href="https://wa.me/message/R3MTK6MOJ6LLB1" class="fa fa-whatsapp"></a>
+					</div>
+					<div class="footer-col-3"> </div>
+				</div>
+				<hr>
+				<p class="copy"> Copyright 2021 - Golden Number Academy </p>
+			</div>
+		</div>
+<script src="https://js.stripe.com/v3/"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="/main.js"></script>
+<script src="/payment.js"></script>
+<script src="/landing_main.js"></script>
+	</body>
+	</html>
+<script>
+    function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Transferência Bancária";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Transferência Bancária";
+    moreText.style.display = "inline";
+  }
+}
+    function yourFunction() {
+  var pontos = document.getElementById("pontos");
+  var maisText = document.getElementById("mais");
+  var botaoText = document.getElementById("myBotao");
+
+  if (pontos.style.display === "none") {
+    pontos.style.display = "inline";
+    botaoText.innerHTML = "MB Way";
+    maisText.style.display = "none";
+  } else {
+    pontos.style.display = "none";
+    botaoText.innerHTML = "MB Way";
+    maisText.style.display = "inline";
+  }
+}
+</script>
+		
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lnag="en">
+<head>
+	<meta charset="UTF-8">
+	<title> Todos os produtos - Golden Number Academy </title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+	{{!-- <script type="text/javascript" scr="store.js" async></script> --}}
+	</head>
+	<body>
+		<div class="header">
+		<div class="container">
+			<div class="navbar">
+			<div class="logo">
+				<a href="/"><img src="/Imagens/logo.png" width="125px"></a>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/"> Início </a></li>
+					<li><a href="/precario"> Preçário </a></li>
+					<li><a href="/about"> Sobre nós</a></li>
+					<li><a href="/contactform"> Contactos</a></li>
+					<li><a href="/login"> Login</a></li>
+					<li><a href="/registo"> Registo</a></li>
+					<li class="cart">
+						<a href="/cart" class="fa fa-shopping-bag"><span>0</span></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+		</div>	
+<!-- Cart items details -->
+		<div class="cart-page container ">
+			<div class="product-header">
+			<h5 class="product-title"> Ano de Escolaridade</h5>
+			<h5 class="product-price"> Preço</h5>
+			<h5 class="product-quantity"> Horas mensais</h5>
+			<h5 class="product-total"> Total</h5>
+			</div>
+			<div class="products">
+
+		</div>
+		<div class="buyBtnCtn">
+			{{!-- <button id="startCheckout" class="startCheckout btn">Finaliza a tua compra</button> --}}
+		<a href="/payment"><button class="startCheck btn">Finaliza a tua compra</button></a>
+		
+		</div>
+	</div>
+	<!-- rodapé -->
+		<div class="footer">
+			<div class="container">
+				<div id="contactos" class="row">
+					<div class="footer-col-1"> 
+					</div>
+					<div class="footer-col-2">
+					<h3> Fala connosco </h3>
+						<!-- Add icon library -->
+						<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+						<!-- Add font awesome icons -->
+						<a href="https://www.facebook.com/GoldenNumberAcademy" class="fa fa-facebook"></a>
+						<a href="https://www.instagram.com/goldennumberacademy/" class="fa fa-instagram"></a>
+						<a href="https://join.skype.com/invite/lfAyjBYL3q9h" class="fa fa-skype"></a>
+						<a href="mailto:goldenumber@outlook.pt" class="fa fa-envelope"></a>
+						<a href="https://wa.me/message/R3MTK6MOJ6LLB1" class="fa fa-whatsapp"></a>
+					</div>
+					<div class="footer-col-3"> </div>
+				</div>
+				<hr>
+				<p class="copy"> Copyright 2021 - Golden Number Academy </p>
+			</div>
+		</div>
+
+	<script src="https://js.stripe.com/v3/"></script>
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+	<script src="/main.js"></script>
+	<script src="/payment.js"></script>
+</body>
+
+</html>
