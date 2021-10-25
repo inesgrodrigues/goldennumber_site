@@ -1,5 +1,4 @@
-const stripe = require('stripe')('sk_test_51HjMU8G9ldgy8q0ki7AV5hqwXenWwrXTGT6SGEeqLhDhH6KI4ieNqzoKjZCtjv5TJYtFY90CSGixe64JMiADC6Q4000pW1yW7H');
-//const stripe = require('stripe')('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');
+const stripe = require('stripe')(' SK test link');
 const { productList } = require('../products');
 const Email = require('../utils/email');
 const Order = require('../models/orderModel');
